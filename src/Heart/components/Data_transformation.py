@@ -80,4 +80,3 @@ class DataTransformation:
         except Exception as e:
             logging.info("Exception occured in the initiate_datatransformation")
             raise customexception(e,sys)
-# Feature transformation pipelines registered for clinical indicators
