@@ -72,4 +72,3 @@ class ModelTrainer:
         except Exception as e:
             logging.info('Exception occured at Model Training')
             raise customexception(e,sys)    
-# Model hyperparameter evaluation and grid search cross-validation registered
