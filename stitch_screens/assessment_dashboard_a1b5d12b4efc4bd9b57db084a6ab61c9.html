@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#a4c9ff", "primary-container": "#163a5f", "on-primary-container": "#84a4cf", "surface-container": "#ebeef2", "surface-container-low": "#f1f4f8", "outline": "#73777f", "on-background": "#181c1f", "secondary-fixed": "#d4e3ff", "tertiary": "#002829", "on-error": "#ffffff", "surface-variant": "#e0e3e7", "on-secondary-fixed-variant": "#004883", "on-primary": "#ffffff", "on-error-container": "#93000a", "secondary-container": "#80b6fe", "surface": "#f7fafe", "tertiary-fixed": "#8ff3f4", "inverse-primary": "#a8c9f5", "primary": "#002444", "inverse-surface": "#2d3134", "on-tertiary-container": "#4ab1b3", "on-primary-fixed-variant": "#27486e", "surface-bright": "#f7fafe", "on-tertiary-fixed": "#002020", "error": "#ba1a1a", "on-secondary-container": "#004681", "surface-dim": "#d7dade", "on-primary-fixed": "#001c37", "primary-fixed": "#d2e4ff", "on-tertiary-fixed-variant": "#004f51", "inverse-on-surface": "#eef1f5", "surface-container-highest": "#e0e3e7", "primary-fixed-dim": "#a8c9f5", "on-secondary": "#ffffff", "tertiary-container": "#004041", "error-container": "#ffdad6", "on-surface-variant": "#43474e", "secondary": "#2060a3", "background": "#f7fafe", "outline-variant": "#c3c6cf", "on-secondary-fixed": "#001c39", "on-tertiary": "#ffffff", "surface-container-high": "#e5e8ec", "tertiary-fixed-dim": "#72d6d8", "on-surface": "#181c1f", "surface-tint": "#406087", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin": "2rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "metric-display": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "metric-display": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-low text-primary"><span class="material-symbols-outlined text-[24px]">ecg_heart</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HeartWise</span><span class="bg-surface-container text-secondary text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded">Clinical Pro</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Intelligent Cardiovascular Insights</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-primary border-b-2 border-primary font-headline-sm"><a aria-current="page" class="transition-colors py-2 text-primary border-b-2 border-primary font-headline-sm" data-path="dashboard" href="#">Dashboard</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="assessment" href="#">Assessment</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="health-insights" href="#">Health Insights</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. J. Henderson</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Cardiologist</span></div></div></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Assessment Hero & Header Banner -->
+<section class="w-full px-gutter py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-tertiary-container border border-outline-variant/40">
+<span class="material-symbols-outlined text-[14px] text-tertiary">neurology</span>
+            AI-assisted clinical assessment
+          </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Model v4.2 Ready
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Heart Disease Risk Assessment</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt- space-xs">
+          Enter clinical measurements and health indicators to generate a machine-learning-based heart disease risk estimate based on validated ensemble weights.
+        </p>
+</div>
+<!-- Quick Telemetry Diagnostic Strip -->
+<div class="w-full lg:w-auto flex-1 lg:max-w-md bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/50 relative overflow-hidden">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">monitor_heart</span>
+<span class="font-label-md text-label-md text-primary">Inference Telemetry Ready</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2 py-0.5 rounded">Cleveland Cohort</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Model ROC-AUC</span>
+<span class="font-headline-sm text-headline-sm text-primary">0.914</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Parameters</span>
+<span class="font-headline-sm text-headline-sm text-primary">13 Inputs</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Validation</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Verified</span>
+</div>
+</div>
+<div class="mt-2 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Physician discretion required for clinical validation</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Assessment Workspace -->
+<section class="w-full px-gutter pb-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Input Form Card (Spans 7 cols on desktop) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/60 flex flex-col gap-space-lg">
+<!-- Form Header & Progress Indicator -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm border-b border-outline-variant/30 pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">assignment</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Patient Clinical Information</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complete all required clinical parameters.</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface" id="form-progress">13 of 13 fields active (Ready for assessment)</span>
+</div>
+</div>
+<form class="space-y-space-lg" id="risk-assessment-form" onsubmit="event.preventDefault(); window.calculateRiskEstimate();">
+<!-- Group A: Demographics & Hemodynamics -->
+<div>
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">vital_signs</span>
+<h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider text-[12px]">Group A: Patient &amp; Cardiovascular Measurements</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Age -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1 flex justify-between" for="input-age">
+<span class="">Age</span>
+<span class="text-on-surface-variant font-normal">years</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all pr-12" id="input-age" max="105" min="18" name="age" required="" type="number" value="54">
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-on-surface-variant pointer-events-none">yrs</span>
+</div>
+</div>
+<!-- Sex -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-sex">Biological Sex</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-sex" name="sex" required="">
+<option selected="" value="1">Male (1)</option>
+<option value="0">Female (0)</option>
+</select>
+</div>
+<!-- Resting Blood Pressure -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1 flex justify-between" for="input-trestbps">
+<span class="">Resting Blood Pressure</span>
+<span class="text-on-surface-variant font-normal">systolic</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all pr-16" id="input-trestbps" max="230" min="70" name="trestbps" required="" type="number" value="130">
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-on-surface-variant pointer-events-none">mm Hg</span>
+</div>
+</div>
+<!-- Serum Cholesterol -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1 flex justify-between" for="input-chol">
+<span class="">Serum Cholesterol</span>
+<span class="text-on-surface-variant font-normal">fasting</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all pr-14" id="input-chol" max="580" min="100" name="chol" required="" type="number" value="240">
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-on-surface-variant pointer-events-none">mg/dL</span>
+</div>
+</div>
+<!-- Maximum Heart Rate -->
+<div class="flex flex-col sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface mb-1 flex justify-between" for="input-thalach">
+<span class="">Maximum Heart Rate Achieved</span>
+<span class="text-on-surface-variant font-normal">stress test max</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all pr-14" id="input-thalach" max="220" min="50" name="thalach" required="" type="number" value="150">
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-on-surface-variant pointer-events-none">bpm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Group B: Clinical Indicators -->
+<div class="pt-2 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 mb-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">stethoscope</span>
+<h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider text-[12px]">Group B: Clinical Indicators</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Chest Pain Type -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-cp">Chest Pain Type</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-cp" name="cp" required="">
+<option value="0">Typical Angina (0)</option>
+<option value="1">Atypical Angina (1)</option>
+<option value="2">Non-Anginal Pain (2)</option>
+<option selected="" value="3">Asymptomatic (3)</option>
+</select>
+</div>
+<!-- Fasting Blood Sugar -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-fbs">Fasting Blood Sugar &gt; 120 mg/dl</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-fbs" name="fbs" required="">
+<option selected="" value="0">No (≤ 120 mg/dl) (0)</option>
+<option value="1">Yes (&gt; 120 mg/dl) (1)</option>
+</select>
+</div>
+<!-- Resting ECG -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-restecg">Resting ECG Results</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-restecg" name="restecg" required="">
+<option selected="" value="0">Normal (0)</option>
+<option value="1">ST-T Wave Abnormality (1)</option>
+<option value="2">Left Ventricular Hypertrophy (2)</option>
+</select>
+</div>
+<!-- Exercise Induced Angina -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-exang">Exercise-Induced Angina</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-exang" name="exang" required="">
+<option selected="" value="0">No (0)</option>
+<option value="1">Yes (1)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Group C: Exercise Test & Advanced Diagnostic Findings -->
+<div class="pt-2 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 mb-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">fluid_med</span>
+<h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider text-[12px]">Group C: Exercise Test &amp; Fluoroscopy</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- ST Depression (Oldpeak) -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1 flex justify-between" for="input-oldpeak">
+<span class="">ST Depression (Oldpeak)</span>
+<span class="text-on-surface-variant font-normal">ST level</span>
+</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-oldpeak" max="6.5" min="0.0" name="oldpeak" required="" step="0.1" type="number" value="1.4">
+</div>
+<!-- ST Slope -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-slope">Peak ST Segment Slope</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-slope" name="slope" required="">
+<option value="0">Upsloping (0)</option>
+<option selected="" value="1">Flat (1)</option>
+<option value="2">Downsloping (2)</option>
+</select>
+</div>
+<!-- Major Vessels (ca) -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-ca">Major Vessels Colored by Flourosopy (ca)</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-ca" name="ca" required="">
+<option selected="" value="0">0 Vessels</option>
+<option value="1">1 Vessel</option>
+<option value="2">2 Vessels</option>
+<option value="3">3 Vessels</option>
+</select>
+</div>
+<!-- Thalassemia -->
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-on-surface mb-1" for="input-thal">Thallium Stress Result</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all" id="input-thal" name="thal" required="">
+<option value="0">Normal (0)</option>
+<option value="1">Fixed Defect (1)</option>
+<option selected="" value="2">Reversible Defect (2)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:flex-1 h-11 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.99]" type="submit">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">ecg</span>
+              Predict Heart Disease Risk
+            </button>
+<button class="w-full sm:w-auto h-11 px-5 rounded-lg border border-outline-variant text-primary hover:bg-surface-container transition-colors font-label-lg" onclick="document.getElementById('risk-assessment-form').reset(); window.resetRiskPreview();" type="button">
+              Reset Form
+            </button>
+</div>
+</form>
+</div>
+<!-- RIGHT COLUMN: Risk Assessment Overview & Live Inference Card (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Interactive Assessment Result Overview -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/60 flex flex-col gap-space-md transition-all" id="result-container">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">pulse_alert</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Risk Assessment Overview</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant" id="assessment-status-badge">Awaiting Execution</span>
+</div>
+<!-- Pending State Box (Default) -->
+<div class="py-space-xl flex flex-col items-center text-center px-space-md" id="pending-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[32px]">query_stats</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Your assessment will appear here</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+              Complete the clinical information and run the assessment to view the model's cardiovascular risk probability.
+            </p>
+</div>
+<!-- Active Calculated Result Box (Hidden by default, shown upon submit) -->
+<div class="hidden flex-col gap-space-md" id="calculated-state">
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Calculated Risk Index</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded font-semibold bg-error-container text-error" id="risk-severity-chip">Elevated Risk (68%)</span>
+</div>
+<div class="w-full bg-surface-container h-3 rounded-full overflow-hidden mt-1">
+<div class="h-full bg-error transition-all duration-700 rounded-full" id="risk-meter-bar" style="width: 68%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1" id="risk-narrative-summary">
+                Clinical indicators suggest notable probability of coronary artery disease, elevated by reversible thallium defect and elevated resting blood pressure.
+              </p>
+</div>
+</div>
+<!-- Model Specifications Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-label-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">memory</span>
+<span class="">Model Architecture Specifications</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ensemble architecture marrying <strong class="text-on-surface">Random Forest (500 trees)</strong> and L2-penalized <strong class="text-on-surface">Logistic Regression</strong>, trained and 10-fold cross-validated on the Cleveland Clinic Cardiovascular dataset.
+            </p>
+<div class="grid grid-cols-2 gap-2 pt-1 font-label-sm text-label-sm text-on-surface-variant border-t border-outline-variant/20">
+<div class="">Features: <span class="font-medium text-on-surface">13 continuous &amp; categorical</span></div>
+<div class="">Calibration: <span class="font-medium text-on-surface">Isotonic Regressor</span></div>
+</div>
+</div>
+<!-- Live Parameter Summary Checklist -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Parameter Feed Check</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-lowest border border-outline-variant/40 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">BP: <strong id="summary-bp">130</strong> mm Hg</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-lowest border border-outline-variant/40 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Chol: <strong id="summary-chol">240</strong> mg/dL</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-lowest border border-outline-variant/40 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Max HR: <strong id="summary-thalach">150</strong> bpm</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-lowest border border-outline-variant/40 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="">Oldpeak: <strong id="summary-oldpeak">1.4</strong> ST</span>
+</div>
+</div>
+</div>
+<!-- Clinical Model Notice -->
+<div class="bg-surface-container-high/40 p-2.5 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Result is a statistical estimate derived from supervised weights, not an autonomous medical diagnosis.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Clinical Indicators Reference Cards -->
+<section class="w-full px-gutter py-space-lg bg-surface-container-low/50 border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Clinical Indicators Reference</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Validated hemodynamic benchmarks mapped against current patient values.</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ACC/AHA Guideline Standards</span>
+</div>
+<!-- 4 Compact Indicator Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Blood Pressure -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/50 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Blood Pressure</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container/60 text-error font-medium">Stage 1 Range</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary">130</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">mm Hg</span>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Reference Standard:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">Normal &lt;120 • Elevated 120-129 • Stage 1 130-139 mm Hg</p>
+</div>
+</div>
+<!-- Card 2: Cholesterol -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/50 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Serum Cholesterol</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium">Borderline High</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary">240</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">mg/dL</span>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Reference Standard:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">Desirable &lt;200 • Borderline 200-239 • High ≥240 mg/dL</p>
+</div>
+</div>
+<!-- Card 3: Resting Heart Rate -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/50 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Resting Heart Rate</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-medium">Standard Normal</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary">72</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">bpm</span>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Reference Standard:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">Typical adult resting range spans 60–100 bpm at baseline</p>
+</div>
+</div>
+<!-- Card 4: Maximum Heart Rate -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/50 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Max Stress Heart Rate</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-medium">Adequate Reserve</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary">150</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">bpm</span>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Target Projection:</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">Age-predicted target ~166 bpm (90.3% achieved on stress test)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Suggestions and Recommendations (3 Photo Cards) -->
+<section class="w-full px-gutter py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Heart Health Suggestions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Explore general heart-health practices and discuss personal recommendations with a qualified healthcare professional.
+        </p>
+</div>
+<!-- 3-Column Card Grid with 16:9 Images -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Nutrition -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/50 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-video w-full bg-surface-container overflow-hidden">
+<img alt="Fresh heart healthy Mediterranean foods arranged on marble counter" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1qAHElgQfiBQsWDhmqybh8lcoGT-nMwpiLQma5PZVmIG68ffCV-b-V10kTcvSRVFn0AQ4q1vnCMFmm-Q6K3AQFX6NPKsSl80P199sIrFXXK9CY0bDOOXdW08_SG9gzM6ug3qjbr57tPrX3bovH4x70-ZxRfAUvZkxhE-7Mi2HAFKSRc0N4fReFjkav7h9vUn2kU7kKBMgb9v-zxbH2HPmRCPK31wZXJL7LRMoRIBsm2hwhWLZCWlZBw">
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+<span class="">Dietary Optimization</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Heart-Healthy Nutrition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Build balanced meals around vegetables, fruits, whole grains, and appropriate sources of protein. Discuss individual dietary needs with a qualified professional.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" href="#">
+                Explore Nutrition
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2: Regular Physical Activity -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/50 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-video w-full bg-surface-container overflow-hidden">
+<img alt="Active mature adult walking in a sunlit green park setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ55ByER7JTSlUTssNA3DUidAoeZvccxqnbLT_8_AkvcmTCwJVi6NPsN7JlDdd9JbvyhzVji4H4DCs6bi5wVcudbIw-v-H3yimj3Z1cTmWY_FWBTowpeIJcQNzPLTfzTitTOcIJC_CWiRTq88dUK884pnjvpFnjt_B0lMd3NYbk9HqAba_hqCis--0AvBd3_jdwmnflrOKLy4QPnwyprv93Kl2vmdml98IA9PuBP6YXZ81Sc7-iu9FWA">
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span class="">Cardio Endurance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Regular Physical Activity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Regular physical activity can support cardiovascular health. Choose activities suited to your abilities and seek medical guidance before starting strenuous exercise if you have symptoms or health concerns.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" href="#">
+                Activity Guidance
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Preventive Heart Care -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/50 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-video w-full bg-surface-container overflow-hidden">
+<img alt="Physician and patient reviewing clinical charts together during medical visit" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHaLpkToGsFXpb4vJEi_UMTzocdXWD6BiidGHi48x9UF8PBzSVq9uJk-oNptXj6TYB7BXJ4cHP9nFXN3V0mximRRlffaiw-9DhfiQabmimNCt0SMOoM7OmP7GbwPtBte5a7WDZNbwsfOdOB8wrjxJmigJyXPx1U85sBUn4mTetLpAjQU97e5Hs99zr3raVq298UHweJezRLilRvJuB206KCBL5KdivTvtrzT_hXIZLA59Vk1jeUCOpCg">
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span>
+<span class="">Proactive Monitoring</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Preventive Heart Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Regular health checkups can help identify cardiovascular risk factors. Discuss blood pressure, cholesterol, symptoms, and family history with your healthcare professional.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" href="#">
+                Preventive Care
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Understanding Your Result & Prominent Clinical Disclaimer -->
+<section class="w-full px-gutter pb-space-xl">
+  <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+    <!-- Section Header -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="material-symbols-outlined text-secondary text-[20px]">local_hospital</span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Clinical Triage &amp; Facilities</span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Nearest Cardiac Facilities &amp; Rapid Care Access</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-1">Quick-reference directory of nearby accredited cardiac emergency departments and cardiology clinics.</p>
+      </div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm shrink-0">
+        <span class="material-symbols-outlined text-[16px] text-secondary">near_me</span>
+        <span class="">Geo-synchronized: Metro Health District</span>
+      </div>
+    </div>
+
+    <!-- Emergency Quick Alert Banner -->
+    <div class="bg-error-container/40 border border-error-container p-space-md rounded-xl flex items-center justify-between gap-space-md flex-wrap sm:flex-nowrap">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+          In case of acute chest discomfort, sudden shortness of breath, or palpitations, contact <strong>911</strong> or proceed to the nearest emergency room immediately.
+        </p>
+      </div>
+      <a href="tel:911" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-error hover:bg-error/90 text-on-error font-label-md transition-colors shrink-0 shadow-sm">
+        <span class="material-symbols-outlined text-[18px]">call</span>
+        <span class="">Call 911 Direct</span>
+      </a>
+    </div>
+
+    <!-- 3 Facility Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+      <!-- Facility 1: Comprehensive Emergency Cardiac Center -->
+      <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/50 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+        <div>
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <div>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-error font-semibold inline-block mb-1">Level 1 Cardiac ED</span>
+              <h3 class="font-headline-sm text-headline-sm text-primary">St. Jude Heart &amp; Vascular Institute</h3>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="font-headline-sm text-headline-sm text-primary block leading-none">1.8 mi</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">~5-8 min</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Comprehensive cardiac emergency pavilion with 24/7 primary percutaneous coronary intervention (PCI).</p>
+          
+          <div class="flex flex-wrap gap-1.5 mb-space-md">
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> 24/7 Chest Pain Unit
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Cath Lab On-Call
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> STEMI Receiving
+            </span>
+          </div>
+
+          <div class="p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/30 text-body-sm text-on-surface-variant mb-space-md">
+            <div class="flex items-center gap-1.5 text-primary font-label-sm mb-1">
+              <span class="material-symbols-outlined text-[15px] text-secondary">clinical_notes</span>
+              <span class="">Triage Recommendation</span>
+            </div>
+            <span class="">Recommended for acute symptoms, marked ST elevation, or elevated risk profile requiring urgent catheterization assessment.</span>
+          </div>
+        </div>
+
+        <div class="pt-space-sm border-t border-outline-variant/20 flex items-center justify-between text-body-sm">
+          <span class="text-on-surface-variant font-label-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">phone</span> (555) 019-4820
+          </span>
+          <a href="#" class="inline-flex items-center gap-1 font-label-md text-secondary hover:text-primary transition-colors">
+            Directions <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Facility 2: Regional University Hospital -->
+      <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/50 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+        <div>
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <div>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-semibold inline-block mb-1">Academic Medical Center</span>
+              <h3 class="font-headline-sm text-headline-sm text-primary">University Cardiovascular Center</h3>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="font-headline-sm text-headline-sm text-primary block leading-none">4.2 mi</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">~12-15 min</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Specialized electrophysiology, heart failure intensive care, and non-invasive advanced coronary CT diagnostics.</p>
+          
+          <div class="flex flex-wrap gap-1.5 mb-space-md">
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Dual-Source Cardiac CT
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Stress Echocardiography
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Heart Rhythm Unit
+            </span>
+          </div>
+
+          <div class="p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/30 text-body-sm text-on-surface-variant mb-space-md">
+            <div class="flex items-center gap-1.5 text-primary font-label-sm mb-1">
+              <span class="material-symbols-outlined text-[15px] text-secondary">clinical_notes</span>
+              <span class="">Triage Recommendation</span>
+            </div>
+            <span class="">Optimal for diagnostic clarification of indeterminate stress tests or structural cardiac evaluations.</span>
+          </div>
+        </div>
+
+        <div class="pt-space-sm border-t border-outline-variant/20 flex items-center justify-between text-body-sm">
+          <span class="text-on-surface-variant font-label-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">phone</span> (555) 018-9341
+          </span>
+          <a href="#" class="inline-flex items-center gap-1 font-label-md text-secondary hover:text-primary transition-colors">
+            Directions <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Facility 3: Outpatient Cardiology & Rapid Diagnostic Suite -->
+      <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/50 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+        <div>
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <div>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold inline-block mb-1">Outpatient Cardiology</span>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Metro Heart Care &amp; Wellness Clinic</h3>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="font-headline-sm text-headline-sm text-primary block leading-none">3.1 mi</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">~8-10 min</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Specialized outpatient hemodynamic consultations, preventative risk stratification, and holter telemetry monitoring.</p>
+          
+          <div class="flex flex-wrap gap-1.5 mb-space-md">
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Same-Day Consults
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Lipid Management
+            </span>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px] text-secondary">check_circle</span> Ambulatory BP
+            </span>
+          </div>
+
+          <div class="p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/30 text-body-sm text-on-surface-variant mb-space-md">
+            <div class="flex items-center gap-1.5 text-primary font-label-sm mb-1">
+              <span class="material-symbols-outlined text-[15px] text-secondary">clinical_notes</span>
+              <span class="">Triage Recommendation</span>
+            </div>
+            <span class="">Recommended for stable patients with borderline scores seeking ongoing lipid tracking and non-emergency outpatient visits.</span>
+          </div>
+        </div>
+
+        <div class="pt-space-sm border-t border-outline-variant/20 flex items-center justify-between text-body-sm">
+          <span class="text-on-surface-variant font-label-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">phone</span> (555) 012-7811
+          </span>
+          <a href="#" class="inline-flex items-center gap-1 font-label-md text-secondary hover:text-primary transition-colors">
+            Directions <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="w-full px-gutter pb-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Model Interpretability Context Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl border border-outline-variant/40">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Understanding Your Result</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          The calculated probability mirrors patterns recognized across clinical test subjects. A lower risk score does not eliminate the possibility of underlying cardiovascular pathology, nor does an elevated score confirm presence of occlusive disease without confirmatory catheterization, nuclear imaging, or formal clinical adjudication.
+        </p>
+</div>
+<!-- Prominent Styled Disclaimer Box -->
+<div class="bg-error-container/40 border border-error-container p-space-lg rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-error flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">emergency</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-error">Important Clinical Notice &amp; Emergency Protocol</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            This application provides an estimated result from a machine-learning model and is not a substitute for professional medical evaluation. Seek urgent medical care for symptoms such as chest pain, severe breathlessness, or fainting.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic Realtime Synchronization and Inference Simulation
+  window.calculateRiskEstimate = function() {
+    const age = parseInt(document.getElementById('input-age').value) || 54;
+    const bp = parseInt(document.getElementById('input-trestbps').value) || 130;
+    const chol = parseInt(document.getElementById('input-chol').value) || 240;
+    const thalach = parseInt(document.getElementById('input-thalach').value) || 150;
+    const oldpeak = parseFloat(document.getElementById('input-oldpeak').value) || 1.4;
+    const cp = parseInt(document.getElementById('input-cp').value);
+    const ca = parseInt(document.getElementById('input-ca').value);
+
+    // Simple demonstrative weighting mirroring standard Cleveland model risk logic
+    let score = 25;
+    if (age > 50) score += 15;
+    if (bp >= 130) score += 12;
+    if (chol >= 240) score += 10;
+    if (thalach < 140) score += 10;
+    if (oldpeak >= 1.5) score += 18;
+    if (cp === 3) score += 8;
+    if (ca > 0) score += (ca * 8);
+
+    const boundedScore = Math.min(Math.max(score, 12), 94);
+
+    // Update live summaries
+    document.getElementById('summary-bp').innerText = bp;
+    document.getElementById('summary-chol').innerText = chol;
+    document.getElementById('summary-thalach').innerText = thalach;
+    document.getElementById('summary-oldpeak').innerText = oldpeak;
+
+    // Display calculated results panel
+    document.getElementById('pending-state').classList.add('hidden');
+    document.getElementById('calculated-state').classList.remove('hidden');
+
+    const statusBadge = document.getElementById('assessment-status-badge');
+    statusBadge.innerText = 'Inference Complete';
+    statusBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-semibold';
+
+    const chip = document.getElementById('risk-severity-chip');
+    const bar = document.getElementById('risk-meter-bar');
+    const narrative = document.getElementById('risk-narrative-summary');
+
+    bar.style.width = boundedScore + '%';
+
+    if (boundedScore < 35) {
+      chip.className = 'font-label-sm text-label-sm px-2.5 py-0.5 rounded font-semibold bg-surface-container text-secondary';
+      chip.innerText = 'Low Risk Profile (' + boundedScore + '%)';
+      bar.className = 'h-full bg-secondary transition-all duration-700 rounded-full';
+      narrative.innerText = 'Patient parameters fall largely within lower statistical thresholds for ischemic events. Continue baseline preventative maintenance.';
+    } else if (boundedScore < 65) {
+      chip.className = 'font-label-sm text-label-sm px-2.5 py-0.5 rounded font-semibold bg-surface-container-high text-on-surface';
+      chip.innerText = 'Moderate Risk (' + boundedScore + '%)';
+      bar.className = 'h-full bg-secondary-container transition-all duration-700 rounded-full';
+      narrative.innerText = 'Mild to moderate hemodynamic and baseline elevations indicated. Secondary lipid and blood pressure assessment suggested.';
+    } else {
+      chip.className = 'font-label-sm text-label-sm px-2.5 py-0.5 rounded font-semibold bg-error-container text-error';
+      chip.innerText = 'Elevated Risk (' + boundedScore + '%)';
+      bar.className = 'h-full bg-error transition-all duration-700 rounded-full';
+      narrative.innerText = 'Clinical indicators suggest notable probability of coronary artery disease, elevated by stress response, vessel count, and hemodynamic profiles.';
+    }
+  };
+
+  window.resetRiskPreview = function() {
+    document.getElementById('pending-state').classList.remove('hidden');
+    document.getElementById('calculated-state').classList.add('hidden');
+    const statusBadge = document.getElementById('assessment-status-badge');
+    statusBadge.innerText = 'Awaiting Execution';
+    statusBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant';
+    document.getElementById('summary-bp').innerText = '130';
+    document.getElementById('summary-chol').innerText = '240';
+    document.getElementById('summary-thalach').innerText = '150';
+    document.getElementById('summary-oldpeak').innerText = '1.4';
+  };
+
+  // Sync inputs dynamically on change
+  ['input-trestbps', 'input-chol', 'input-thalach', 'input-oldpeak'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) {
+      el.addEventListener('input', () => {
+        const bpEl = document.getElementById('summary-bp');
+        const cholEl = document.getElementById('summary-chol');
+        const hrEl = document.getElementById('summary-thalach');
+        const opEl = document.getElementById('summary-oldpeak');
+        if(id === 'input-trestbps') bpEl.innerText = el.value || '--';
+        if(id === 'input-chol') cholEl.innerText = el.value || '--';
+        if(id === 'input-thalach') hrEl.innerText = el.value || '--';
+        if(id === 'input-oldpeak') opEl.innerText = el.value || '--';
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant py-space-lg mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">HIPAA Compliant &amp; CE Medical Certified Platform</span><span class="font-body-sm text-body-sm text-on-surface-variant">Intended for authorized clinical professionals only. Real-time telemetry decisions require physician verification.</span></div></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#">Clinical Protocol</a><a class="hover:text-primary transition-colors" href="#">Audit Log</a><a class="hover:text-primary transition-colors" href="#">System Status</a><span class="text-on-surface-variant">© 2025 HeartWise Inc.</span></div></div></footer>
+
+</body></html>
