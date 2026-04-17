@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#a4c9ff", "primary-container": "#163a5f", "on-primary-container": "#84a4cf", "surface-container": "#ebeef2", "surface-container-low": "#f1f4f8", "outline": "#73777f", "on-background": "#181c1f", "secondary-fixed": "#d4e3ff", "tertiary": "#002829", "on-error": "#ffffff", "surface-variant": "#e0e3e7", "on-secondary-fixed-variant": "#004883", "on-primary": "#ffffff", "on-error-container": "#93000a", "secondary-container": "#80b6fe", "surface": "#f7fafe", "tertiary-fixed": "#8ff3f4", "inverse-primary": "#a8c9f5", "primary": "#002444", "inverse-surface": "#2d3134", "on-tertiary-container": "#4ab1b3", "on-primary-fixed-variant": "#27486e", "surface-bright": "#f7fafe", "on-tertiary-fixed": "#002020", "error": "#ba1a1a", "on-secondary-container": "#004681", "surface-dim": "#d7dade", "on-primary-fixed": "#001c37", "primary-fixed": "#d2e4ff", "on-tertiary-fixed-variant": "#004f51", "inverse-on-surface": "#eef1f5", "surface-container-highest": "#e0e3e7", "primary-fixed-dim": "#a8c9f5", "on-secondary": "#ffffff", "tertiary-container": "#004041", "error-container": "#ffdad6", "on-surface-variant": "#43474e", "secondary": "#2060a3", "background": "#f7fafe", "outline-variant": "#c3c6cf", "on-secondary-fixed": "#001c39", "on-tertiary": "#ffffff", "surface-container-high": "#e5e8ec", "tertiary-fixed-dim": "#72d6d8", "on-surface": "#181c1f", "surface-tint": "#406087", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin": "2rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "metric-display": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "metric-display": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-low text-primary"><span class="material-symbols-outlined text-[24px]">ecg_heart</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HeartWise</span><span class="bg-surface-container text-secondary text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded">Clinical Pro</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Intelligent Cardiovascular Insights</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-lg h-16" data-active-classes="text-primary border-b-2 border-primary font-headline-sm"><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="dashboard" href="#">Dashboard</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="assessment" href="#">Assessment</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="health-insights" href="#">Health Insights</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors focus:outline-none" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. J. Henderson</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Cardiologist</span></div></div></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Navigation & Clinical Audit Trail -->
+<section class="w-full bg-surface-bright px-gutter py-space-md border-b-0">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Breadcrumb + Hierarchy -->
+<div class="flex flex-col gap-space-xs">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home_health</span>
+            Dashboard
+          </a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Assessment Results (HW-88419)</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Priority Clinical Referral &amp; Booking</span>
+</nav>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Specialist Appointment Booking &amp; Clinical Intake</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+            Triage Priority: Tier 3 High Risk (68% Algorithmic Index)
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Direct triage routing powered by HeartWise ML Telemetry. Transmitting quantitative Cleveland-ensemble biomarkers directly to affiliated tertiary catheterization suites and electrophysiology practices.
+        </p>
+</div>
+<!-- Quick Document Actions -->
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container transition-all font-label-lg text-label-lg" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Referral Slip</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary text-on-primary shadow-sm hover:bg-primary-container transition-all font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>EHR Dispatch (HL7)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Live Patient Risk Telemetry Strip (ML Pipeline Linkage) -->
+<section class="w-full px-gutter py-space-sm">
+<div class="max-w-[1440px] mx-auto rounded-xl bg-surface-container-lowest shadow-sm p-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Patient ID & Demographics -->
+<div class="flex items-center gap-space-md pl-1">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Patient Dossier</span>
+<span class="bg-surface-container px-1.5 py-0.2 rounded font-label-sm text-label-sm text-primary">Verified</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary truncate">HW-88419 • Male, 54y</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">DOB: 12/04/1970 • MRN: #491-002-8</span>
+</div>
+</div>
+<!-- ML Algorithmic Index -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ML Risk Probability</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-metric-display text-metric-display text-error leading-none">68%</span>
+<span class="font-label-md text-label-md text-error">High Risk</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cleveland ROC-AUC: 0.912</span>
+</div>
+</div>
+<!-- Key Hemodynamic Markers -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">vital_signs</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Critical Vitals</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate">145 mmHg • 265 mg/dL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">2 Major Vessels • Flat ST Slope</span>
+</div>
+</div>
+<!-- Automated Clinical Recommendation -->
+<div class="flex items-center gap-space-md rounded-lg bg-secondary-fixed/30 p-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">alarm_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-semibold uppercase">Mandated Referral Window</span>
+<span class="font-label-lg text-label-lg text-primary font-bold truncate">Within 24–48 Hours</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed truncate">Interventional Cath Lab Priority</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Multi-Column Referral & Booking Experience -->
+<main class="w-full px-gutter py-space-md">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Center & Specialist Directory (7 cols) -->
+<section class="lg:col-span-7 flex flex-col gap-space-md min-w-0">
+<!-- Filter Tabs & Accreditation Banner -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-1 overflow-x-auto pb-1 sm:pb-0" id="filter-tabs">
+<button class="px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md whitespace-nowrap shadow-sm" type="button">
+              All Centers (3)
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Interventional Cath Lab
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Electrophysiology &amp; CCU
+            </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Advanced CAC Imaging
+            </button>
+</div>
+<div class="flex items-center gap-1.5 text-secondary pl-2 sm:pl-0 font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>All Board-Certified</span>
+</div>
+</div>
+<!-- CENTER 1: University Heart & Vascular Pavilion (Primary Highlight) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200 ring-2 ring-primary/20">
+<!-- Center Banner Header -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary truncate">University Heart &amp; Vascular Pavilion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive CCU &amp; Academic Center • 2.4 miles (12 min transit)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary-fixed/50 text-on-secondary-fixed font-semibold">
+                Tier-1 Direct Affiliate
+              </span>
+</div>
+</div>
+<!-- Doctor 1: Dr. Marcus Vance, MD, FACC (Selected Primary) -->
+<div class="p-space-md bg-surface-bright/50 flex flex-col sm:flex-row gap-space-md items-start">
+<div class="relative shrink-0">
+<img alt="Portrait of Dr. Marcus Vance, MD, Chief of Interventional Cardiology" class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover shadow-sm bg-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABVYlW2hwKVe9u5fYxlxYGN8s6QlyoWfVYGN5zgCSsWe4BW-rxyCjChArMZy6CqliFklepDoxLBUdVkjWfbQOeZKyPFvizuWesks5uziD9lySOuTGzyjYtYlBppaz4TRD9_OcDgFFU2hX8pO1adBf5fVaWF-YxpDHCDrX-SiSgnF7cLyxD7GHkMvsOtw8t13p24EfPT9mhlAZOWlwwTCXgOzE9LSpoh2UjRsjsKmakAed6tNAotJH6uA"/>
+<span class="absolute -bottom-1 -right-1 p-1 bg-surface-container-lowest rounded-full shadow-sm text-secondary" title="Verified Attending Cardiologist">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Dr. Marcus Vance, MD, FACC</h2>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Chief of Interventional Cardiology &amp; Catheterization Suite</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+<span class="text-on-surface-variant">(182 clinical reviews)</span>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm line-clamp-2">
+                Johns Hopkins Fellowship • 18 years clinical leadership. Lead sub-investigator on complex coronary atheroma intervention and fractional flow reserve (FFR) optimization.
+              </div>
+<!-- Tags / Procedures -->
+<div class="mt-3 flex flex-wrap gap-1.5 items-center">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">Coronary Angiography</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">DES Stenting</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">Intravascular Ultrasound (IVUS)</span>
+</div>
+<!-- Slot & Selection Status -->
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Earliest Reserved HeartWise Slot</span>
+<span class="font-headline-sm text-headline-sm text-primary">Tomorrow, Oct 25 • 09:30 AM</span>
+</div>
+</div>
+<label class="cursor-pointer inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors">
+<input checked="" class="accent-on-primary w-4 h-4 cursor-pointer" name="selected_specialist" type="radio" value="dr_vance"/>
+<span>Selected Specialist</span>
+</label>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high"></div>
+<!-- Doctor 2: Dr. Sarah Jenkins, MD, FESC -->
+<div class="p-space-md flex flex-col sm:flex-row gap-space-md items-start opacity-95 hover:opacity-100 transition-opacity">
+<div class="relative shrink-0">
+<img alt="Clinical consultation portrait of Dr. Sarah Jenkins, Senior Cardiovascular Imaging Specialist" class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover shadow-sm bg-surface-container" src="https://lh3.googleusercontent.com/aida/AEtjO1WZx95zcbcqscsk3TgFL1l8__dfD9AMk-FruoXJz-Lg9e2gHK_WAYsRdIJ5KeR5od8ZeLCa0sOKLaXUfZr7A1oUxzg9XGV46rZKtP-szxgeX6lgvn-s62lMOfWtnYuwqxxtwXdFE_uRrc0aNjRbvpyg4Fc-Vr7OMap8rcdjocF4Ezj4LoNxwhopOKbKRPDMTSw0TcwUApcFIzVSyVyY8_64ObC9LXCjSdTJkkDhXKehGhjIbxeYRrjY7W5S"/>
+<span class="absolute -bottom-1 -right-1 p-1 bg-surface-container-lowest rounded-full shadow-sm text-secondary" title="Board Certified Cardiologist">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Dr. Sarah Jenkins, MD, FESC</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Senior Cardiovascular Imaging &amp; Preventive Cardiology Specialist</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-amber-500 fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+<span class="text-on-surface-variant">(144 reviews)</span>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm line-clamp-2">
+                Specialized in multi-detector coronary computed tomography angiography (CCTA), stress myocardial perfusion, and intensive plaque stabilization protocol.
+              </div>
+<!-- Tags / Procedures -->
+<div class="mt-3 flex flex-wrap gap-1.5 items-center">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">Dual-Source CCTA</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">Echocardiography</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface">Target Lipid Therapy</span>
+</div>
+<!-- Slot & Selection Status -->
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Standard Outpatient Opening</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Friday, Oct 27 • 11:15 AM</span>
+</div>
+</div>
+<label class="cursor-pointer inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="selected_specialist" type="radio" value="dr_jenkins"/>
+<span>Select Dr. Jenkins</span>
+</label>
+</div>
+</div>
+</div>
+</article>
+<!-- CENTER 2: St. Jude Cardiovascular Institute & Emergency Dept -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md transition-shadow hover:shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-error-container/30 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">emergency</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">St. Jude Cardiovascular Institute &amp; Emergency Hub</h3>
+<span class="px-2 py-0.5 bg-error/10 text-error rounded font-label-sm text-label-sm font-semibold whitespace-nowrap">Level 1 STEMI</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                0.8 miles away (4 min dispatch) • 24/7 Direct Telemetry Ingestion • Dedicated Primary PCI suite
+              </p>
+<div class="mt-2 flex items-center gap-3 text-secondary font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                  Direct Acute Triage: (555) 019-4822
+                </span>
+<span>• Door-to-Balloon Median: 48 mins</span>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto shrink-0 px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+            Route STEMI Triage
+          </button>
+</article>
+<!-- CENTER 3: Mercy Memorial Heart Clinic & Imaging -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md transition-shadow hover:shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">local_hospital</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Mercy Memorial Heart Clinic &amp; Imaging Pavilion</h3>
+<span class="px-2 py-0.5 bg-surface-container text-secondary rounded font-label-sm text-label-sm font-medium">Outpatient Care</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                3.9 miles away (16 min drive) • Coronary Artery Calcium (CAC) quantification &amp; Nuclear SPECT imaging
+              </p>
+<div class="mt-2 flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span>Available Specialists: Dr. L. Zhao • Dr. K. O'Connor</span>
+<span>• Next routine intake: Monday</span>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto shrink-0 px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+            View Details
+          </button>
+</article>
+<!-- Clinical Telemetry Notice -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Automated Inter-Hospital Diagnostic Transmission</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Selection of any affiliated center initiates real-time cryptographic packaging of patient HW-88419's fluoroscopy calcification coordinates, ST-elevation vectors, and 13 ML Cleveland risk variables to the attending cath lab nurse navigator.
+            </p>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Interactive Intake & Scheduling Confirmation Panel (5 cols) -->
+<aside class="lg:col-span-5 flex flex-col gap-space-md min-w-0">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg flex flex-col gap-space-md sticky top-20">
+<!-- Card Header -->
+<div class="flex flex-col pb-space-sm border-b-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Clinical Referral Order</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface px-2 py-0.5 rounded font-mono">ORDER #REF-99201</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Appointment &amp; Triage Dispatch</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scheduled for transmission to Dr. Marcus Vance, MD (Cath Suite)</p>
+</div>
+<!-- Form Step 1: Modality / Consultation Type -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Consultation Modality</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="relative flex flex-col p-2.5 rounded-lg bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container text-center focus-within:ring-2 focus-within:ring-primary">
+<input checked="" class="sr-only peer" name="consultation_type" type="radio" value="in_person"/>
+<span class="material-symbols-outlined text-[20px] mx-auto text-primary peer-checked:text-secondary">meeting_room</span>
+<span class="font-label-md text-label-md text-primary mt-1 font-semibold">In-Person</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hospital Cath</span>
+<div class="absolute inset-0 rounded-lg ring-2 ring-primary peer-checked:block hidden pointer-events-none"></div>
+</label>
+<label class="relative flex flex-col p-2.5 rounded-lg bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container text-center focus-within:ring-2 focus-within:ring-primary">
+<input class="sr-only peer" name="consultation_type" type="radio" value="telehealth"/>
+<span class="material-symbols-outlined text-[20px] mx-auto text-on-surface-variant peer-checked:text-secondary">videocam</span>
+<span class="font-label-md text-label-md text-on-surface mt-1 font-semibold">Telehealth</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Virtual Prep</span>
+<div class="absolute inset-0 rounded-lg ring-2 ring-primary peer-checked:block hidden pointer-events-none"></div>
+</label>
+<label class="relative flex flex-col p-2.5 rounded-lg bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container text-center focus-within:ring-2 focus-within:ring-primary">
+<input class="sr-only peer" name="consultation_type" type="radio" value="diagnostic_fasttrack"/>
+<span class="material-symbols-outlined text-[20px] mx-auto text-on-surface-variant peer-checked:text-secondary">speed</span>
+<span class="font-label-md text-label-md text-on-surface mt-1 font-semibold">Fast-Track</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Direct Angio</span>
+<div class="absolute inset-0 rounded-lg ring-2 ring-primary peer-checked:block hidden pointer-events-none"></div>
+</label>
+</div>
+</div>
+<!-- Form Step 2: Date Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Preferred Priority Date</label>
+<span class="font-label-sm text-label-sm text-secondary font-medium">October 2025</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="font-label-sm text-label-sm uppercase">Today</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">24</span>
+<span class="font-label-sm text-label-sm text-error">Booked</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 rounded-lg bg-primary text-on-primary shadow-sm" type="button">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-inverse-primary">Tomorrow</span>
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold">25</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">2 Slots</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Thu</span>
+<span class="font-headline-sm text-headline-sm font-bold">26</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Slots</span>
+</button>
+<button class="flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Fri</span>
+<span class="font-headline-sm text-headline-sm font-bold">27</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Slots</span>
+</button>
+</div>
+</div>
+<!-- Form Step 3: Time Slot Grid -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Available Time Windows</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-secondary-fixed/50 text-primary font-label-md text-label-md ring-2 ring-secondary font-semibold" type="button">
+<span>09:30 AM</span>
+<span class="font-label-sm text-label-sm bg-primary text-on-primary px-1.5 py-0.5 rounded">Triage Priority</span>
+</button>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span>11:00 AM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard</span>
+</button>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span>02:15 PM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard</span>
+</button>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span>04:00 PM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Post-Op Review</span>
+</button>
+</div>
+</div>
+<!-- Form Step 4: ML Telemetry Transmission Attachments -->
+<div class="flex flex-col gap-2 rounded-lg bg-surface-container-low p-space-sm">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">attachment</span>
+              Referral Data Payload (Auto-Attached)
+            </span>
+<div class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="text-on-surface">HeartWise 68% SHAP Probability &amp; Risk Decomposition</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="text-on-surface">13 Hemodynamic Predictors (Resting BP 145, Chol 265, Fluoroscopy 2.0)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="text-on-surface">Instant Push to Dr. Vance's On-Call Cath Team Nurse Station</span>
+</label>
+</div>
+</div>
+<!-- Form Step 5: Patient Insurance Verification -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Insurance &amp; Billing Authorization</label>
+<div class="rounded-lg bg-surface-bright p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold truncate">BlueCross BlueShield Comprehensive PPO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Subscriber ID: #BC-8921104-01 • Tier 1 Copay: $35</span>
+</div>
+</div>
+<span class="shrink-0 bg-secondary-fixed/50 text-on-secondary-fixed px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold">
+                Pre-Approved
+              </span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-space-sm pt-2">
+<button class="w-full py-3 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm transition-all shadow-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">send_time_extension</span>
+<span>Confirm Priority Booking &amp; Transmit ML Data</span>
+</button>
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Formal Physician Referral Letter (PDF)</span>
+</button>
+</div>
+<!-- Security & HIPAA Compliance Notice -->
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">lock</span>
+<span>256-bit TLS Encrypted. Transmitted via SMART on FHIR to Epic/Cerner.</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant py-space-lg mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">HIPAA Compliant &amp; CE Medical Certified Platform</span><span class="font-body-sm text-body-sm text-on-surface-variant">Intended for authorized clinical professionals only. Real-time telemetry decisions require physician verification.</span></div></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#">Clinical Protocol</a><a class="hover:text-primary transition-colors" href="#">Audit Log</a><a class="hover:text-primary transition-colors" href="#">System Status</a><span class="text-on-surface-variant">© 2025 HeartWise Inc.</span></div></div></footer>
+</body></html>
