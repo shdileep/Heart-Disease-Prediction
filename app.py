@@ -39,6 +39,42 @@ def home():
                 thal=thal
             )
 
+            final_data = data.get_data_as_dataframe()
+            # Make prediction
+            predict_pipeline = PredictPipeline()
+            pred = predict_pipeline.predict(final_data)
+            result = round(pred[0], 2)
 
+            patient = {
+                "age": age,
+                "sex": sex,
+                "cp": cp,
+                "trestbps": trestbps,
+                "chol": chol,
+                "fbs": fbs,
+                "restecg": restecg,
+                "thalach": thalach,
+                "exang": exang,
+                "oldpeak": oldpeak,
+                "slope": slope,
+                "ca": ca,
+                "thal": thal
+            }
+            return render_template("result.html", final_result=result, patient=patient)
+
+        except Exception as e:
+            # Handle exceptions gracefully
+            error_message = f"Error during prediction: {str(e)}"
+            return render_template("error.html", error_message=error_message)
+
+    else:
+        # Render the initial page
+        return render_template("index.html")
+
+@app.route("/referral")
+def referral():
+    return render_template("referral.html")
+
+# Execution begins
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
