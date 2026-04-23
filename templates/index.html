@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeartWise — Heart Disease Risk Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#002444",
+            "primary-container": "#163a5f",
+            secondary: "#2060a3",
+            surface: "#f7fafe",
+            "surface-card": "#ffffff",
+            "surface-muted": "#f1f4f8",
+            "border-subtle": "#e0e3e7",
+            "text-main": "#181c1f",
+            "text-muted": "#555d67",
+            error: "#ba1a1a",
+            success: "#00796b"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-surface text-text-main min-h-screen flex flex-col justify-between antialiased">
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border-subtle shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-[24px]">ecg_heart</span>
+        </div>
+        <div>
+          <span class="text-lg font-bold text-primary tracking-tight">HeartWise</span>
+          <span class="hidden sm:inline-block text-xs text-text-muted ml-2 font-medium">Cardiovascular Risk Assessment</span>
+        </div>
+      </a>
+      <nav class="flex items-center gap-2 sm:gap-4">
+        <a href="/" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-primary bg-surface-muted transition-colors">
+          Assessment
+        </a>
+        <a href="/referral" class="px-3 py-1.5 rounded-lg text-sm font-medium text-text-muted hover:text-primary transition-colors">
+          Specialist Booking
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1 space-y-8">
+
+    <!-- Hero Title -->
+    <div class="max-w-3xl space-y-2">
+      <h1 class="text-2xl sm:text-3xl font-bold text-primary tracking-tight">
+        Cardiovascular Health Assessment
+      </h1>
+      <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+        Fill in the clinical values below to evaluate cardiovascular disease risk using our trained machine learning model.
+      </p>
+    </div>
+
+    <!-- Workspace Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- LEFT: Form Card (7 Cols) -->
+      <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 border border-border-subtle shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-border-subtle pb-4">
+          <div class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-secondary text-[22px]">vital_signs</span>
+            <h2 class="text-base font-semibold text-primary">Patient Measurements</h2>
+          </div>
+          <span class="text-xs font-medium text-text-muted bg-surface-muted px-2.5 py-1 rounded-md">
+            13 Clinical Parameters
+          </span>
+        </div>
+
+        <form method="POST" action="/" class="space-y-6" id="risk-assessment-form">
+
+          <!-- Section 1: Demographics & Vitals -->
+          <div class="space-y-4">
+            <h3 class="text-xs font-semibold text-text-muted uppercase tracking-wider">
+              1. Demographics & Hemodynamics
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Age -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-age">
+                  Age <span class="text-text-muted font-normal">(years)</span>
+                </label>
+                <input type="number" id="input-age" name="age" min="18" max="100" value="54" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+              </div>
+
+              <!-- Sex -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-sex">
+                  Biological Sex
+                </label>
+                <select id="input-sex" name="sex" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="1" selected>Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+
+              <!-- Resting Blood Pressure -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-trestbps">
+                  Resting Blood Pressure <span class="text-text-muted font-normal">(mm Hg)</span>
+                </label>
+                <input type="number" id="input-trestbps" name="trestbps" min="80" max="220" value="130" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+              </div>
+
+              <!-- Serum Cholesterol -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-chol">
+                  Serum Cholesterol <span class="text-text-muted font-normal">(mg/dl)</span>
+                </label>
+                <input type="number" id="input-chol" name="chol" min="100" max="600" value="240" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+              </div>
+
+              <!-- Max Heart Rate -->
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-thalach">
+                  Maximum Heart Rate Achieved <span class="text-text-muted font-normal">(bpm)</span>
+                </label>
+                <input type="number" id="input-thalach" name="thalach" min="60" max="220" value="150" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Clinical Indicators -->
+          <div class="space-y-4 pt-4 border-t border-border-subtle">
+            <h3 class="text-xs font-semibold text-text-muted uppercase tracking-wider">
+              2. Clinical Findings & Symptoms
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Chest Pain Type -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-cp">
+                  Chest Pain Type
+                </label>
+                <select id="input-cp" name="cp" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0">Typical Angina (0)</option>
+                  <option value="1">Atypical Angina (1)</option>
+                  <option value="2">Non-Anginal Pain (2)</option>
+                  <option value="3" selected>Asymptomatic (3)</option>
+                </select>
+              </div>
+
+              <!-- Fasting Blood Sugar -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-fbs">
+                  Fasting Blood Sugar > 120 mg/dl
+                </label>
+                <select id="input-fbs" name="fbs" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0" selected>No (≤ 120 mg/dl)</option>
+                  <option value="1">Yes (> 120 mg/dl)</option>
+                </select>
+              </div>
+
+              <!-- Resting ECG -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-restecg">
+                  Resting ECG Results
+                </label>
+                <select id="input-restecg" name="restecg" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0" selected>Normal</option>
+                  <option value="1">ST-T Wave Abnormality</option>
+                  <option value="2">Left Ventricular Hypertrophy</option>
+                </select>
+              </div>
+
+              <!-- Exercise Induced Angina -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-exang">
+                  Exercise-Induced Angina
+                </label>
+                <select id="input-exang" name="exang" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0" selected>No</option>
+                  <option value="1">Yes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Diagnostic Tests -->
+          <div class="space-y-4 pt-4 border-t border-border-subtle">
+            <h3 class="text-xs font-semibold text-text-muted uppercase tracking-wider">
+              3. Diagnostic & Fluoroscopy Findings
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Oldpeak -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-oldpeak">
+                  ST Depression (Oldpeak)
+                </label>
+                <input type="number" step="0.1" id="input-oldpeak" name="oldpeak" min="0" max="6.5" value="1.4" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+              </div>
+
+              <!-- Slope -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-slope">
+                  Peak Exercise ST Slope
+                </label>
+                <select id="input-slope" name="slope" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0">Upsloping (0)</option>
+                  <option value="1" selected>Flat (1)</option>
+                  <option value="2">Downsloping (2)</option>
+                </select>
+              </div>
+
+              <!-- Major Vessels (ca) -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-ca">
+                  Major Vessels Colored (0-3)
+                </label>
+                <select id="input-ca" name="ca" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0" selected>0 Vessels</option>
+                  <option value="1">1 Vessel</option>
+                  <option value="2">2 Vessels</option>
+                  <option value="3">3 Vessels</option>
+                </select>
+              </div>
+
+              <!-- Thalassemia -->
+              <div>
+                <label class="block text-xs font-medium text-text-main mb-1" for="input-thal">
+                  Thalassemia
+                </label>
+                <select id="input-thal" name="thal" required
+                  class="w-full h-10 px-3 rounded-lg border border-border-subtle bg-white text-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+                  <option value="0">Normal (0)</option>
+                  <option value="1">Fixed Defect (1)</option>
+                  <option value="2" selected>Reversible Defect (2)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="pt-4 border-t border-border-subtle flex flex-col sm:flex-row items-center gap-3">
+            <button type="submit"
+              class="w-full sm:flex-1 h-11 px-6 rounded-xl bg-primary hover:bg-primary-container text-white font-semibold text-sm flex items-center justify-center gap-2 transition shadow-sm">
+              <span class="material-symbols-outlined text-[20px]">monitor_heart</span>
+              Analyze Heart Disease Risk
+            </button>
+            <button type="button" onclick="document.getElementById('risk-assessment-form').reset(); window.updateSummary();"
+              class="w-full sm:w-auto h-11 px-5 rounded-xl border border-border-subtle text-text-muted hover:text-text-main hover:bg-surface-muted text-sm font-medium transition">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: Summary & Key Vitals Card (5 Cols) -->
+      <div class="lg:col-span-5 space-y-6">
+        <!-- Vitals Live Summary -->
+        <div class="bg-white rounded-2xl p-6 border border-border-subtle shadow-sm space-y-5">
+          <div class="flex items-center justify-between border-b border-border-subtle pb-3">
+            <h2 class="text-base font-semibold text-primary flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+              Parameters Summary
+            </h2>
+            <span class="text-xs text-text-muted">Live Preview</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 text-center">
+            <div class="p-3 rounded-xl bg-surface-muted">
+              <span class="block text-xs text-text-muted mb-0.5">Blood Pressure</span>
+              <span class="text-lg font-bold text-primary" id="summary-bp">130</span>
+              <span class="text-[11px] text-text-muted ml-0.5">mm Hg</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface-muted">
+              <span class="block text-xs text-text-muted mb-0.5">Cholesterol</span>
+              <span class="text-lg font-bold text-primary" id="summary-chol">240</span>
+              <span class="text-[11px] text-text-muted ml-0.5">mg/dl</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface-muted">
+              <span class="block text-xs text-text-muted mb-0.5">Max Heart Rate</span>
+              <span class="text-lg font-bold text-primary" id="summary-hr">150</span>
+              <span class="text-[11px] text-text-muted ml-0.5">bpm</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface-muted">
+              <span class="block text-xs text-text-muted mb-0.5">ST Depression</span>
+              <span class="text-lg font-bold text-primary" id="summary-op">1.4</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100 text-xs text-text-muted leading-relaxed">
+            <strong class="text-primary block font-semibold mb-1">How it works:</strong>
+            Our trained machine learning model evaluates these 13 indicators collectively to detect patterns correlated with cardiovascular health. Click <em>"Analyze Heart Disease Risk"</em> to view the complete diagnosis.
+          </div>
+        </div>
+
+        <!-- Helpful Reference -->
+        <div class="bg-white rounded-2xl p-6 border border-border-subtle shadow-sm space-y-3">
+          <h3 class="text-sm font-semibold text-primary flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+            Validated Indicators
+          </h3>
+          <p class="text-xs text-text-muted leading-relaxed">
+            Variables include resting blood pressure, fasting lipid concentrations, peak exercise heart rate, and electrocardiographic findings collected through standard non-invasive stress tests.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Lifestyle Guidance Cards (3 Clean Cards with Photos) -->
+    <div class="space-y-4 pt-6">
+      <div class="max-w-xl">
+        <h2 class="text-lg font-bold text-primary">Cardiovascular Health Pillars</h2>
+        <p class="text-xs text-text-muted">Proven proactive strategies for maintaining optimal heart wellness.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1: Nutrition -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-border-subtle shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-44 w-full overflow-hidden bg-surface-muted">
+            <img src="{{ url_for('static', filename='images/heart_healthy_food.jpg') }}"
+                 alt="Heart-Healthy Nutrition" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="text-sm font-semibold text-primary">Heart-Healthy Nutrition</h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Incorporate nutrient-dense foods, leafy greens, omega-3 fatty acids, and low-sodium choices to support arterial health.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Physical Activity -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-border-subtle shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-44 w-full overflow-hidden bg-surface-muted">
+            <img src="{{ url_for('static', filename='images/healthy_lifestyle.jpg') }}"
+                 alt="Regular Physical Activity" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="text-sm font-semibold text-primary">Regular Exercise</h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Aim for 150 minutes of moderate aerobic activity weekly to strengthen cardiac muscle and improve resting circulation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Regular Checkups -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-border-subtle shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-44 w-full overflow-hidden bg-surface-muted">
+            <img src="{{ url_for('static', filename='images/doctor_consultation.jpg') }}"
+                 alt="Consult a Doctor" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="text-sm font-semibold text-primary">Preventive Consultations</h3>
+              <p class="text-xs text-text-muted mt-1 leading-relaxed">
+                Schedule routine blood pressure and lipid profile checks with a physician to catch potential risk factors early.
+              </p>
+            </div>
+            <div class="pt-2">
+              <a href="/referral" class="text-xs font-semibold text-secondary hover:underline inline-flex items-center gap-1">
+                Find a Specialist <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clean Medical Notice -->
+    <div class="bg-surface-muted rounded-xl p-4 border border-border-subtle flex items-start gap-3">
+      <span class="material-symbols-outlined text-text-muted text-[20px] mt-0.5 shrink-0">info</span>
+      <p class="text-xs text-text-muted leading-relaxed">
+        <strong>Medical Notice:</strong> This software utilizes machine learning statistical algorithms to assist in cardiovascular risk evaluation. It is designed for informational purposes and should not replace clinical medical evaluation by a licensed healthcare provider.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="bg-white border-t border-border-subtle py-4 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-text-muted">
+      <span>HeartWise — Cardiovascular Health Assessment</span>
+      <div class="flex gap-4">
+        <a href="/" class="hover:text-primary transition">Assessment</a>
+        <a href="/referral" class="hover:text-primary transition">Specialist Booking</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function updateSummary() {
+      const bp = document.getElementById('input-trestbps').value || '--';
+      const chol = document.getElementById('input-chol').value || '--';
+      const hr = document.getElementById('input-thalach').value || '--';
+      const op = document.getElementById('input-oldpeak').value || '--';
+      document.getElementById('summary-bp').innerText = bp;
+      document.getElementById('summary-chol').innerText = chol;
+      document.getElementById('summary-hr').innerText = hr;
+      document.getElementById('summary-op').innerText = op;
+    }
+
+    ['input-trestbps', 'input-chol', 'input-thalach', 'input-oldpeak'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('input', updateSummary);
+    });
+  </script>
+</body>
+</html>
