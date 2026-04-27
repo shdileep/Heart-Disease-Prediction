@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeartWise — Error</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f7fafe] font-sans text-[#181c1f] min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-md w-full bg-white rounded-2xl shadow-lg border border-red-100 p-8 text-center space-y-5">
+    <div class="w-16 h-16 rounded-full bg-red-50 text-red-600 mx-auto flex items-center justify-center">
+      <span class="material-symbols-outlined text-[32px]">error</span>
+    </div>
+    <div class="space-y-2">
+      <h2 class="text-2xl font-bold text-[#002444]">Assessment Error</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        {{ error_message if error_message else "An unexpected error occurred during prediction evaluation." }}
+      </p>
+    </div>
+    <a href="/" class="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-xl bg-[#002444] hover:bg-[#163a5f] text-white text-sm font-semibold transition-colors shadow-sm w-full">
+      <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Return to Assessment
+    </a>
+  </div>
+</body>
+</html>
