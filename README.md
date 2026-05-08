@@ -115,3 +115,26 @@ If you prefer to use Docker, you can install and run the project using a Docker 
    - Open a web browser or the appropriate client to access the project.
 
 ## Setup
+
+### MLflow Tracking
+
+We use MLflow to log and track our machine learning experiments. The MLFLOW_TRACKING_URI environment variable is set to the DagsHub repository's MLflow tracking URI.
+
+```bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/shdileep/Heart-Disease-Prediction.mlflow
+
+export MLFLOW_TRACKING_USERNAME=shdileep
+
+export MLFLOW_TRACKING_PASSWORD=<your_dagshub_token>
+```
+
+## Contributing
+
+Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
